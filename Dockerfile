@@ -1,9 +1,6 @@
 FROM python:3.7-slim
 
-WORKDIR /botname
 
-COPY requirements.txt /botname/
-RUN pip install -r /botname/requirements.txt
-COPY . /botname/
+RUN pip install -r requirements.txt
 
-CMD python3 /botname/app.py
+CMD python3 app.py
